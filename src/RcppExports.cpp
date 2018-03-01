@@ -18,6 +18,7 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_FLITestStuff_rcpp_hello", (DL_FUNC) &_FLITestStuff_rcpp_hello, 0},
+    {"facto", (DL_FUNC) &F77_NAME(facto), 2},
     {NULL, NULL, 0}
 };
 
